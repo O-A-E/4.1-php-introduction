@@ -59,3 +59,11 @@ echo "\n Hello, my name is {$myObject->name}. \n I am {$myObject->age} years old
 foreach( $myObject->hobbies as $hobby ) { // Note: $hobby in this case represents the current iterated item in the array. Can be any variable name. Each iteration of the loop will display a new item in the list..
     echo "\n * $hobby";
 }
+
+echo "\n\nLet's try a \"for\" loop!";
+for ( $iterator = 0; $iterator <8; $iterator = $iterator + 2  ) {
+    echo "\nCurrent value in loop: $iterator";
+}
+
+$myArrayLength = count ( $myArray );
+echo "The variable \$myArray contains $myArrayLength items."; // Escape backslash stops myArray from printing and just prints it as text.
